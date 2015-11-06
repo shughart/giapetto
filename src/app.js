@@ -31,6 +31,10 @@ var HelloWorldLayer = cc.Layer.extend({
         });
         this.addChild(this.sprite, 0);
 
+        this.addChild(new cc.TMXTiledMap(res.iso_test1_tmx), -10);
+
+
+
         return true;
     }
 });
